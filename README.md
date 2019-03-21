@@ -1,0 +1,3 @@
+# CreateDHCPReservations
+
+Quick and dirty program to parse DHCP log files for deleted DHCP reservations and recreate them. Our whole DHCP reservation list was accidently deleted and rather than spending days manually rebuilding the list this program was created to parse the DHCP log files for each deleted reservation. Each deleted reservation is written to a csv file that can then be manually curated than imported into the DHCP using the netsh dhcp command. Unfortunately we are running Sever2008R2 and powershell could not be utilized. Making this project public just in case anyone else has this unfortunate need.
